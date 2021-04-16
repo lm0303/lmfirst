@@ -36,8 +36,6 @@ public class ExcelUtils<T> {
 
 	/**
 	 * 从excel导入,返回一个list集合
-	 * 
-	 * @author 解伟(2011/4/20)
 	 * @param file
 	 *            导入的excel文件
 	 * @param pattern
