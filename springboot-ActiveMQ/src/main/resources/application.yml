@@ -1,0 +1,27 @@
+# 服务端口号
+server:
+  port: 8001
+
+spring:
+  # activeMQ配置
+  activemq:
+    # broker地址,默认款口号为61616
+    broker-url: tcp://127.0.0.1:61616
+    # 用户
+    user: admin
+    # 密码
+    password: admin
+    # 信任所有的包，即支持发送对象消息
+    packages:
+      trust-all: true
+  jms:
+    # 配置消息类型，如果是true则表示topic消息，如果为false表示Queue消息(不配置的话activeMq默认为Queue模式)
+    pub-sub-domain: false
+
+# 自定义队列或主题名称  
+my:
+  active:
+    queue: my_activemq_queue_1
+    topic: my_activemq_topic_1
+        
+
