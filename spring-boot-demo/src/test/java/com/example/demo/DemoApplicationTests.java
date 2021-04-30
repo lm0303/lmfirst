@@ -24,6 +24,7 @@ class DemoApplicationTests {
         Long c = 3l;
         System.out.println(c.equals(a+b));
         System.out.println(c == a+b);
+        System.out.println(String.format("{%s:%s}", "code","value"));
     }
     
 }
