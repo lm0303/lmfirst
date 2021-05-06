@@ -4,7 +4,7 @@ import java.util.function.Supplier;
 
 public class FactoryMethodTest {
     public static void main(String[] args) {
-        Supplier<MysqlSessionFactory> supplier = MysqlSessionFactory::new;
+        Supplier<SessionFactory> supplier = MysqlSessionFactory::new;
         Supplier<Session> session = supplier.get()::getSession;
         session.get().getContext();
 //        new MysqlSessionFactory().getSession().getContext();
