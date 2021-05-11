@@ -1,6 +1,6 @@
 package com.limeng.design.structuralMode.proxy;
 
-public class UserServiceTarget  implements UserService {
+public class UserServiceTarget implements UserService {
 
     @Override
     public void b() {
