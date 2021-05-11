@@ -4,8 +4,14 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.math.BigDecimal;
 
+
+/**
+ * @author limeng
+ */
 @Slf4j
+
 public class BridgeTest {
+
     public static void main(String[] args) {
         log.info("微信人脸支付测试");
         Pay wxPay = new WXPay(new PayFaceMode());
